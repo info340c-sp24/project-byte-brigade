@@ -1,0 +1,18 @@
+body {
+  font-size: 16px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+p {
+  line-height: 1.5;
+}
+
+header {
+  padding: .5rem 0;
+}
+
+section {
+  margin: .5rem 0;
+  padding: .5rem;
+  border: 1px solid rgba(0, 0, 0, 0.795);
+}
