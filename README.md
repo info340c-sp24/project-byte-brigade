@@ -4,3 +4,5 @@ This repository contains code for an interactive information web app, created fo
 
 Michael Cinnamon
 Myky Ho
+Natalie DeLaat
+Deborah Markos
