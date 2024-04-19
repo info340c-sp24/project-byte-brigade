@@ -31,6 +31,7 @@
 
 header {
   text-align: center;
+  font-style: italic;
 }
 
 body, html {
@@ -106,4 +107,29 @@ section {
   padding: 0.5rem 1rem;
   text-align: center;
   margin: 0;
+}
+
+@media (max-width: 600px) {
+  /* Adjust styles for small screens */
+  .topnav a {
+
+    padding:10px; /* Reduce padding for smaller screens */
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+}
+
+/* Media query for large screens */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Change layout to row for larger screens */
+  }
+
+  .card {
+    margin-right: 1em; /* Add margin between cards */
+  }
+
+  .card:last-child {
+    margin-right: 0; /* Remove margin for the last card */
+  }
 }
