@@ -105,6 +105,13 @@ section {
   margin: 0;
 }
 
+.hike-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 /* Media query for samller screens*/
 @media (max-width: 598px) {
   .topnav a {

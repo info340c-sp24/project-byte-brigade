@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Hike Information</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">    
+    <!-- normalize.css for cross-browser stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="login.html">Profile</a>
+            <a class = "active" href="info.html">DEMO PAGE-TEMP</a>
+        </div>
+
+        <h1>Husky Hikes - Burke-Gilman Trail</h1>
+        <p<>A scenic walk along the Burke-Gilman</p>
+    </header>
+    
+
+    <main>
+        <div class="hike-info">
+            <img src = "img/burkegilman.jpg" alt="Picture of the Burke-Gilman Trail">
+            <h2>About the hike:</h2>
+            <p>The Burke-Gilman Trail is a ...</p>
+        </div>
+        <div class="comments">
+            <h2>Comments</h2>
+            <div id="comments">
+                <!-- This part will be added in later dynamically with js!-->
+            </div>
+        </div>
+        <div class="comment-form">
+            <h2>Add Your Comments</h2>
+            <form id = "comment-form">
+                <label for="name">Hiker Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="comment">Tell us about your trek!:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <!-- copyright -->
+        <p>&copy;HuskyHikes, University of Washington 2024 </p>
+    </footer>
+</body>
+</html>
