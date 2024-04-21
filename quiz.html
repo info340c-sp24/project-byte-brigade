@@ -16,14 +16,25 @@
             <a href="login.html">Profile</a>
         </div>
 
-        <h1>HuskyHikes</h1>
-        <p>Find your Hike</p>
+        <h1>Husky Hikes</h1>
+        <p<>Take a quiz to find the hike for you!</p>
     </header>
     
 
     <main>
-        <div>
-            <p>Quiz</p>
+        <div class="hike-quiz">
+            <form>
+                <p>1. Do you like elevated or flat hikes?</p>
+                <div>
+                    <input type="radio" id="elevated" name="question1" value="elevated" checked />
+                    <label for="elevated">Elevated</label>
+                </div>
+                <div>
+                    <input type="radio" id="flat" name="question1" value="flat" />
+                    <label for="flat">Flat</label>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
         </div>
     </main>
 
