@@ -18,20 +18,20 @@
         </div>
 
         <h1>Husky Hikes</h1>
-        <p<>Take a quiz to find the hike for you!</p>
+        <p>Take a quiz to find the hike for you!</p>
     </header>
     
 
     <main>
         <div class="hike-quiz">
             <form>
-                <p>1. Do you like elevated or flat hikes?</p>
+                <p>1. Do you like elevated or flat hikes?</p>  <!-- FOR FUTURE REFERENCE, CHANGE THE "FLAT" AND "ELEVATED" TO ACTUAL QUESTION VALUES. ERRORS WHEN DUPLICATE IDS FOR MULTIPLE ANSWERS-->
                 <div>
-                    <input type="radio" id="elevated" name="question1" value="elevated" checked />
+                    <input type="radio" id="elevated" name="question1" value="elevated" checked>
                     <label for="elevated">Elevated</label>
                 </div>
                 <div>
-                    <input type="radio" id="flat" name="question1" value="flat" />
+                    <input type="radio" id="flat" name="question1" value="flat">
                     <label for="flat">Flat</label>
                 </div>
             </form>
@@ -40,16 +40,16 @@
             <form>
                 <p>2. What type of route would you prefer?</p>
                 <div>
-                    <input type="radio" id="elevated" name="question2" value="elevated" checked />
-                    <label for="elevated">Loop</label>
+                    <input type="radio" id="Loop" name="question2" value="Loop" checked>
+                    <label for="Loop">Loop</label>
                 </div>
                 <div>
-                    <input type="radio" id="flat" name="question2" value="flat" />
-                    <label for="flat">Out & Back</label>
+                    <input type="radio" id="O&B" name="question2" value="O&B">
+                    <label for="O&B">Out & Back</label>
                 </div>
                 <div>
-                    <input type="radio" id="flat" name="question2" value="flat" />
-                    <label for="flat">Point to Point</label>
+                    <input type="radio" id="PtP" name="question2" value="PtP">
+                    <label for="PtP">Point to Point</label>
                 </div>
             </form>
         </div>
@@ -57,16 +57,16 @@
             <form>
                 <p>3. How long do you want your hike to be?</p>
                 <div>
-                    <input type="radio" id="elevated" name="question3" value="elevated" checked />
-                    <label for="elevated">Less than 5 miles</label>
+                    <input type="radio" id=">5" name="question3" value=">5" checked>
+                    <label for=">5">Less than 5 miles</label>
                 </div>
                 <div>
-                    <input type="radio" id="flat" name="question3" value="flat" />
-                    <label for="flat">5 - 10 miles</label>
+                    <input type="radio" id="5-10" name="question3" value="5-10">
+                    <label for="5-10">5 - 10 miles</label>
                 </div>
                 <div>
-                    <input type="radio" id="flat" name="question3" value="flat" />
-                    <label for="flat">More than 10 miles</label>
+                    <input type="radio" id="10+" name="question3" value="10+">
+                    <label for="10+">More than 10 miles</label>
                 </div>
             </form>
         </div>
@@ -74,16 +74,16 @@
             <form>
                 <p>4. How long would you prefer to hike for?</p>
                 <div>
-                    <input type="radio" id="elevated" name="question4" value="elevated" checked />
-                    <label for="elevated">Less than an hour</label>
+                    <input type="radio" id=">1" name="question4" value=">1" checked>
+                    <label for=">1">Less than an hour</label>
                 </div>
                 <div>
-                    <input type="radio" id="flat" name="question4" value="flat" />
-                    <label for="flat">1 - 3 hours</label>
+                    <input type="radio" id="1-3" name="question4" value="1-3">
+                    <label for="1-3">1 - 3 hours</label>
                 </div>
                 <div>
-                    <input type="radio" id="flat" name="question4" value="flat" />
-                    <label for="flat">More than 3 hours</label>
+                    <input type="radio" id="3+" name="question4" value="3+">
+                    <label for="3+">More than 3 hours</label>
                 </div>
             </form>
         </div>
@@ -91,12 +91,12 @@
             <form>
                 <p>5. Would you pay a fee?</p>
                 <div>
-                    <input type="radio" id="elevated" name="question5" value="elevated" checked />
-                    <label for="elevated">Yes</label>
+                    <input type="radio" id="Yes" name="question5" value="Yes" checked>
+                    <label for="Yes">Yes</label>
                 </div>
                 <div>
-                    <input type="radio" id="flat" name="question5" value="flat" />
-                    <label for="flat">No</label>
+                    <input type="radio" id="No" name="question5" value="No">
+                    <label for="No">No</label>
                 </div>
                 <input type="submit" value="Submit">
             </form>
