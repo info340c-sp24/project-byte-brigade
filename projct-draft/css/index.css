@@ -10,6 +10,7 @@
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
+  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -27,6 +28,32 @@
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
 }
 
 header {
@@ -113,17 +140,27 @@ section {
 }
 
 /* Media query for samller screens*/
-@media (max-width: 598px) {
-  .topnav a {
-    padding-top: 20px; 
-    padding-bottom: 20px; 
-    font-size: 15px; 
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+    
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
   }
 
 }
 
 /* Media query for larger screens */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .topnav a {
     font-size: 16px; 
   }

@@ -10,6 +10,7 @@
     <!-- normalize.css for cross-browser stuff -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
 <body>
@@ -21,12 +22,16 @@
             <a href="quiz.html">Demo Quiz</a>
             <a href="login.html">Profile</a>
             <a href="info.html">DEMO PAGE-TEMP</a>
-            
-
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
         </div>
 
         <h1>Husky Hikes</h1>
-        <p>Welcome Huskies to some Washington hikes! </p>
+        <p>Welcome Huskies to some Washington hikes!</p>
     </header>
 
     <main>
@@ -219,6 +224,9 @@
         <!-- copyright -->
         <p> &copy;HuskyHikes, University of Washington 2024 </p>
     </footer>
+
+    <!-- include JavaScript files here! -->
+    <script src="src/index.js" ></script>
 
 </body>
 </html>

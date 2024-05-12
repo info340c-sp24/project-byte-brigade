@@ -1,0 +1,323 @@
+[
+    {
+        "name": "Wallace Falls",
+        "location": "Gold Bar, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 4.9,
+        "timeInMinutes": 177,
+        "elevation": 1469,
+        "requiresPass": true,
+        "imageName": "wallacefall.jpg" 
+    },
+    {
+        "name": "Cherry Creek Hike",
+        "location": "Duvall, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 4.8,
+        "timeInMinutes": 122,
+        "elevation": 646,
+        "requiresPass": false,
+        "imageName": "cherrycreek.jpg" 
+    },
+    {
+        "name": "Franklin Falls",
+        "location": "Snoqualmie, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 2,
+        "timeInMinutes": 122,
+        "elevation": 344,
+        "requiresPass": true,
+        "imageName": "franklinfalls.jpg" 
+    },
+    {
+        "name": "Heybrook Lookout",
+        "location": "Gold Bar, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 1.9,
+        "timeInMinutes": 89,
+        "elevation": 879,
+        "requiresPass": false,
+        "imageName": "heybrooklookout.jpg" 
+    },
+    {
+        "name": "Union Bay Natrual Area",
+        "location": "Seattle, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 0.9,
+        "timeInMinutes": 17,
+        "elevation": 29,
+        "requiresPass": false,
+        "imageName": "unionbay.jpg" 
+    },
+    {
+        "name": "Lake 22",
+        "location": "North Cascades, WA",
+        "kidFriendly": false,
+        "animalFriendly": true,
+        "distance": 5.9,
+        "timeInMinutes": 193,
+        "elevation": 1446,
+        "requiresPass": true,
+        "imageName": "lake22.jpg" 
+    },
+    {
+        "name": "Washington Park Arboretum",
+        "location": "Seattle, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 3.7,
+        "timeInMinutes": 76,
+        "elevation": 206,
+        "requiresPass": false,
+        "imageName": "arboretum.jpg" 
+    },
+    {
+        "name": "Gas Works Park Loop",
+        "location": "Seattle, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 0.5,
+        "timeInMinutes": 11,
+        "elevation": 39,
+        "requiresPass": false,
+        "imageName": "gasworks.jpg" 
+    },
+    {
+        "name": "Ravenna Park Loop Trail",
+        "location": "Seattle, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 2.9,
+        "timeInMinutes": 40,
+        "elevation": 164,
+        "requiresPass": false,
+        "imageName": "ravenna.jpg" 
+    },
+    {
+        "name": "Green Lake",
+        "location": "Seattle, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 2.9,
+        "timeInMinutes": 51,
+        "elevation": 36,
+        "requiresPass": false,
+        "imageName": "greenlake.jpg" 
+    },
+    {
+        "name": "Foster Point",
+        "location": "Seattle, WA",
+        "kidFriendly": true,
+        "animalFriendly": false,
+        "distance": 3.3,
+        "timeInMinutes": 63,
+        "elevation": 101,
+        "requiresPass": false,
+        "imageName": "fosterpoint.jpg" 
+    },
+    {
+        "name": "Maple Pass Trail",
+        "location": "Winthrop, WA",
+        "kidFriendly": false,
+        "animalFriendly": true,
+        "distance": 6.5,
+        "timeInMinutes": 249,
+        "elevation": 2162,
+        "requiresPass": false,
+        "imageName": "mapletrail.jpg" 
+    },
+    {
+        "name": "Cheshiahud Lake Union Loop",
+        "location": "Seattle, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 6.4,
+        "timeInMinutes": 123,
+        "elevation": 232,
+        "requiresPass": false,
+        "imageName": "cheshiahud.jpg" 
+    },
+    {
+        "name": "Burke Gilman Trail",
+        "location": "Seattle, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 18.4,
+        "timeInMinutes": 336,
+        "elevation": 485,
+        "requiresPass": false,
+        "imageName": "burkegilman.jpg" 
+    },
+    {
+        "name": "Discovery Park",
+        "location": "Magnolia, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 4.5,
+        "timeInMinutes": 107,
+        "elevation": 485,
+        "requiresPass": false,
+        "imageName": "discoverypark.jpg" 
+    },
+    {
+        "name": "Lincoln Park",
+        "location": "West Seattle, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 1.4,
+        "timeInMinutes": 30,
+        "elevation": 111,
+        "requiresPass": false,
+        "imageName": "lincolnpark.jpg" 
+    },
+    {
+        "name": "Poo-Poo Point Trail",
+        "location": "Issaquah, WA",
+        "kidFriendly": false,
+        "animalFriendly": true,
+        "distance": 6.6,
+        "timeInMinutes": 227,
+        "elevation": 1794,
+        "requiresPass": false,
+        "imageName": "poopoo.jpg" 
+    },
+    {
+        "name": "Mount Si Trail",
+        "location": "North Bend, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 7.9,
+        "timeInMinutes": 217,
+        "elevation": 3395,
+        "requiresPass": true,
+        "imageName": "mountsi.jpg" 
+    },
+    {
+        "name": "Evans Creek Preserve",
+        "location": ", WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 2.5,
+        "timeInMinutes": 73,
+        "elevation": 465,
+        "requiresPass": false,
+        "imageName": "evanscreek.jpg" 
+    },
+    {
+        "name": "Grand Forest West Main Trail",
+        "location": "Bainbridge Island, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 1.1,
+        "timeInMinutes": 23,
+        "elevation": 62,
+        "requiresPass": false,
+        "imageName": "grandforest.jpg" 
+    },
+    {
+        "name": "Chief Sealth Trail",
+        "location": "Seattle, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 8.9,
+        "timeInMinutes": 205,
+        "elevation": 882,
+        "requiresPass": false,
+        "imageName": "chief.jpg" 
+    },
+    {
+        "name": "Coal Creek Tail",
+        "location": "Bellevue, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 5.1,
+        "timeInMinutes": 123,
+        "elevation": 567,
+        "requiresPass": false,
+        "imageName": "coalcreek.jpg" 
+    },
+    {
+        "name": "Japanese Gulch South Loop",
+        "location": "Mukilteo, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 3.5,
+        "timeInMinutes": 100,
+        "elevation": 314,
+        "requiresPass": false,
+        "imageName": "japanesegulch.jpg" 
+    },
+    {
+        "name": "Paradise Valley Area",
+        "location": "Maltby, WA",
+        "kidFriendly": false,
+        "animalFriendly": true,
+        "distance": 4.8,
+        "timeInMinutes": 101,
+        "elevation": 314,
+        "requiresPass": false,
+        "imageName": "paradisevalley.jpg" 
+    },
+    {
+        "name": "North Creek Trail",
+        "location": "Martha Lake, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 1.8,
+        "timeInMinutes": 33,
+        "elevation": 39,
+        "requiresPass": false,
+        "imageName": "northcreek.jpg" 
+    },
+    {
+        "name": "Robe Canyon Trail",
+        "location": "Granite Falls, WA",
+        "kidFriendly": true,
+        "animalFriendly": false,
+        "distance": 0.7,
+        "timeInMinutes": 18,
+        "elevation": 98,
+        "requiresPass": false,
+        "imageName": "robecanyon.jpg" 
+    },
+    {
+        "name": "Granite Falls Fish Ladder",
+        "location": "Granite Falls, WA",
+        "kidFriendly": true,
+        "animalFriendly": false,
+        "distance": 0.7,
+        "timeInMinutes": 18,
+        "elevation": 98,
+        "requiresPass": false,
+        "imageName": "granitefalls.jpg" 
+    },
+    {
+        "name": "Bud Blancher Trail ",
+        "location": "Eatonville, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 4.6,
+        "timeInMinutes": 114,
+        "elevation": 561,
+        "requiresPass": false,
+        "imageName": "budblancher.jpg" 
+    },
+    {
+        "name": "Puyallup Loop Trail",
+        "location": "Puyallup, WA",
+        "kidFriendly": true,
+        "animalFriendly": true,
+        "distance": 4.2,
+        "timeInMinutes": 99,
+        "elevation": 433,
+        "requiresPass": false,
+        "imageName": "puyallup.jpg" 
+    }
+    
+    
+]
