@@ -17,6 +17,14 @@
     text-decoration: none;
     font-size: 17px;
   }
+
+  button.nav-link {
+    float: right;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 2px 2px;
+    margin-left: 16px;
+  }
   
   /* Change the color of links on hover */
   .topnav a:hover {

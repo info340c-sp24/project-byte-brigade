@@ -29,20 +29,6 @@ function App() {
           }
         }
       }
-      
-      //the React compnent to render
-      function MySignInScreen() {
-      
-        const auth = getAuth(); //access the "authenticator"
-      
-        return (
-          <div>
-            <h1>My App</h1>
-            <p>Please sign-in:</p>
-            <StyledFirebaseAuth uiConfig={firebaseUIConfig} firebaseAuth={auth} />
-          </div>
-        );
-      }
 
       const handleLogout = () => {
         const auth = getAuth();
@@ -62,17 +48,20 @@ function App() {
     } else {
       return (
           <div>
+            
             <div className="container">
-            <header>
-              <h1>HuskyHikes</h1>
-            </header>
-            <div id="nav" className="col-3">
-              <Navbar onLogout={handleLogout} /> {}
+              <header>
+                <h1>HuskyHikes</h1>
+              </header>
+              <div id="nav" className="col-3">
+                <Navbar onLogout={handleLogout} /> {}
+              </div>
             </div>
-          </div>
           
             <Routes>
               <Route path="/" element={<HikesPage />} />
+              <Route path="/quiz" element={<HikesPage />} />
+              <Route path="/comment" element={<HikesPage />} />
             </Routes>
             <footer>
               <div>&copy; HuskyHikes, University of Washington 2024</div>
