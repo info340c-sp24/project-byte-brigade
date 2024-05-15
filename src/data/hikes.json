@@ -8,7 +8,8 @@
         "timeInMinutes": 177,
         "elevation": 1469,
         "requiresPass": true,
-        "imageName": "wallacefall.jpg" 
+        "imageName": "wallacefall.jpg",
+        "scenery": ["Waterfall,", " Wildlife,", " River"]
     },
     {
         "name": "Cherry Creek Hike",
