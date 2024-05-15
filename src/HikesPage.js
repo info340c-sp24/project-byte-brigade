@@ -16,7 +16,7 @@ const HikesPage = () => {
     )
 }
 
-export { HikesPage };
+export default HikesPage;
 
 //this is the suggestions about how to alter this page in order to take the user
 //to the desired hike with simply clicking on the card. didn't want to edit your code without asking!
