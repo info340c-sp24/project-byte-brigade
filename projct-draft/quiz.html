@@ -12,7 +12,7 @@
     <header>
         <div class="topnav">
             <a href="index.html">Home</a>
-            <a class="active" href="#quiz">Demo Quiz</a>
+            <a class="active" href="#quiz">Quiz</a>
             <a href="login.html">Profile</a>
             <a href="info.html">DEMO PAGE-TEMP</a>
         </div>
@@ -25,14 +25,18 @@
     <main>
         <div class="hike-quiz">
             <form>
-                <p>1. Do you like elevated or flat hikes?</p>  <!-- FOR FUTURE REFERENCE, CHANGE THE "FLAT" AND "ELEVATED" TO ACTUAL QUESTION VALUES. ERRORS WHEN DUPLICATE IDS FOR MULTIPLE ANSWERS-->
-                <div>
-                    <input type="radio" id="elevated" name="question1" value="elevated" checked>
-                    <label for="elevated">Elevated</label>
-                </div>
+                <p>1. What elevation would you prefer?</p> 
                 <div>
                     <input type="radio" id="flat" name="question1" value="flat">
-                    <label for="flat">Flat</label>
+                    <label for="flat">Less than 500 feet</label>
+                </div>
+                <div>
+                    <input type="radio" id="mid" name="question1" value="mid">
+                    <label for="mid">500 - 1000 feet</label>
+                </div>
+                <div>
+                    <input type="radio" id="elevated" name="question1" value="elevated">
+                    <label for="elevated">More than 1000 feet</label>
                 </div>
             </form>
         </div>
@@ -40,7 +44,7 @@
             <form>
                 <p>2. What type of route would you prefer?</p>
                 <div>
-                    <input type="radio" id="Loop" name="question2" value="Loop" checked>
+                    <input type="radio" id="Loop" name="question2" value="Loop">
                     <label for="Loop">Loop</label>
                 </div>
                 <div>
@@ -57,7 +61,7 @@
             <form>
                 <p>3. How long do you want your hike to be?</p>
                 <div>
-                    <input type="radio" id=">5" name="question3" value=">5" checked>
+                    <input type="radio" id=">5" name="question3" value=">5">
                     <label for=">5">Less than 5 miles</label>
                 </div>
                 <div>
@@ -74,7 +78,7 @@
             <form>
                 <p>4. How long would you prefer to hike for?</p>
                 <div>
-                    <input type="radio" id=">1" name="question4" value=">1" checked>
+                    <input type="radio" id=">1" name="question4" value=">1">
                     <label for=">1">Less than an hour</label>
                 </div>
                 <div>
@@ -89,18 +93,19 @@
         </div>
         <div class="hike-quiz">
             <form>
-                <p>5. Would you pay a fee?</p>
+                <p>5. Would you purchase a Discovery or Northwest Forest Pass ($30 - $35)?</p>
                 <div>
-                    <input type="radio" id="Yes" name="question5" value="Yes" checked>
+                    <input type="radio" id="Yes" name="question5" value="Yes">
                     <label for="Yes">Yes</label>
                 </div>
                 <div>
                     <input type="radio" id="No" name="question5" value="No">
                     <label for="No">No</label>
                 </div>
-                <input type="submit" value="Submit">
             </form>
         </div>
+        <input type="submit" value="Submit">
+        <button id="restartQuiz">Quiz Reset</button>
     </main>
 
     <footer>
