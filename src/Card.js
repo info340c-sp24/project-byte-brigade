@@ -5,7 +5,7 @@ const Card = ({ hike }) => {
     const history = useHistory();
 
     const handleClick = () => {
-        history.push(`/hike/${hike.id}`);
+        history.push(`/hike/${encodeURIComponent(hike.name)}`);
     };
 
     return (

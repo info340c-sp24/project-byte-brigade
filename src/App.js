@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HikesPage from './HikesPage.js';
+import HikeDetailPage from './HikeDetailPage.js';
 import Navbar from './Navbar.js';
 import { getAuth, onAuthStateChanged, EmailAuthProvider, GoogleAuthProvider, signOut } from 'firebase/auth'
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
@@ -47,26 +48,26 @@ function App() {
       );
     } else {
       return (
-          <div>
-            
+          <Router>
             <div className="container">
               <header>
                 <h1>HuskyHikes</h1>
               </header>
               <div id="nav" className="col-3">
-                <Navbar onLogout={handleLogout} /> {}
+                <Navbar onLogout={handleLogout} />
               </div>
-            </div>
-          
+
             <Routes>
               <Route path="/" element={<HikesPage />} />
               <Route path="/quiz" element={<HikesPage />} />
               <Route path="/comment" element={<HikesPage />} />
+              <Route path="/hike/:name" element={<HikeDetailPage />} />
             </Routes>
             <footer>
               <div>&copy; HuskyHikes, University of Washington 2024</div>
             </footer>
           </div>
+        </Router>
       );
     }
   }
