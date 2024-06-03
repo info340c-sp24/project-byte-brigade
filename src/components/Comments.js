@@ -7,7 +7,7 @@ const Comments = () => {
 
     useEffect(() => {
         const storedComments = JSON.parse(localStorage.getItem('comments')) || [];
-        setComments(storedComments);
+        setComments(storedComments[hikeName] || []);
     }, [hikeName]);
 
     const handleFormSubmit = (event) => {
@@ -18,8 +18,11 @@ const Comments = () => {
         const newComment = { name, comment };
         const updatedComments = [...comments, newComment];
 
+        const storedComments = JSON.parge(localStorage.getItem('comments')) || {};
+        storedComments[hikeName] = updatedComments;
+
         setComments(updatedComments);
-        localStorage.setItem('comments', JSON.stringify(updatedComments));
+        localStorage.setItem('comments', JSON.stringify(storedComments));
 
         event.target.name.value = '';
         event.target.comment.value = '';
