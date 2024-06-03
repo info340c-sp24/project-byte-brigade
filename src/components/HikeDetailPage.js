@@ -15,6 +15,7 @@ const HikeDetailPage = () => {
         <div className="container">
             <header className="jumbotron">
                 <h1>Husky Hikes - {hike.name}</h1>
+                <h2>📍{hike.location}</h2>
 
             </header>
 
@@ -22,8 +23,9 @@ const HikeDetailPage = () => {
                 <div className="hike-info">
                     <img src={`/img/${hike.imageName}`} alt={`this hike is of /img/${hike.imageName}`} />
                     <h2>About the hike:</h2>
-                    <p>Scenery: {hike.scenery}</p>
-                    <p>{hike.details} || "No details available!" </p>
+                    <p>Scenery: {hike.scenery}</p><br />
+                    <p>Kid Friendly: {hike.kidFriendly}, Animal Friendly: {hike.animalFriendly}, Requires Pass? {hike.requiresPass}</p><br />
+                    <p>Distance: {hike.distance}, Time in Minutes: {hike.timeInMinutes}, Elevation: {hike.elevation}</p>
                 </div>
                 <Comments />
             </main>
