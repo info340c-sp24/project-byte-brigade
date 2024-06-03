@@ -6,23 +6,36 @@ const Comments = () => {
     const [comments, setComments] = useState([]);
 
     useEffect(() => {
-        const storedComments = JSON.parse(localStorage.getItem('comments')) || [];
-        setComments(storedComments[hikeName] || []);
+        try {
+            const storedComments = JSON.parse(localStorage.getItem('comments')) || {};
+            setComments(storedComments[hikeName] || []); 
+        } catch (error) {
+            console.error('Error fetching comments form localStorage:', error);
+        }
     }, [hikeName]);
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        const name = event.target.name.value;
-        const comment = event.target.comment.value;
+        const name = event.target.name.value.trim();
+        const comment = event.target.comment.value.trim();
+
+        if (!name || !comment) {
+            alert('Please enter both name and comment.');
+            return;
+        }
 
         const newComment = { name, comment };
         const updatedComments = [...comments, newComment];
 
-        const storedComments = JSON.parse(localStorage.getItem('comments')) || {};
-        storedComments[hikeName] = updatedComments;
+        try {
+            const storedComments = JSON.parse(localStorage.getItem('comments')) || {};
+            storedComments[hikeName] = updatedComments;
 
-        setComments(updatedComments);
-        localStorage.setItem('comments', JSON.stringify(storedComments));
+            setComments(updatedComments);
+            localStorage.setItem('comments', JSON.stringify(storedComments));
+        } catch (error) {
+            console.error('Error saving comments to localStorage:', error);
+        }
 
         event.target.name.value = '';
         event.target.comment.value = '';
