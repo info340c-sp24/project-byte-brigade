@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import HikesPage from './HikesPage.js';
 import HikeDetailPage from './HikeDetailPage.js';
 import Navbar from './Navbar.js';
-import QuizControl from './QuizControl.js';
+import QuizControl from './quizcontrol.js';
 import { getAuth, onAuthStateChanged, EmailAuthProvider, GoogleAuthProvider, signOut } from 'firebase/auth'
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+import Comments from './Comments.js';
 
 function App({hikes}) {
   const [user, setUser] = useState(null);
@@ -59,15 +60,13 @@ function App({hikes}) {
           </header>
         </div>
 
-      <Router>
         <Routes>
           <Route path="/" element={<HikesPage hikes={hikes} />} />
-          <Route path="/quiz" element={<HikesPage />} />
-          <Route path="/comment" element={<HikesPage />} />
+          <Route path="/comment" element={<Comments />} />
           <Route path="/hike/:name" element={<HikeDetailPage />} />
           <Route path="/quiz" element={<QuizControl />} />
         </Routes>
-      </Router>
+
         <footer>
           <div>&copy; HuskyHikes, University of Washington 2024</div>
         </footer>

@@ -15,12 +15,6 @@ const HikeDetailPage = () => {
     return (
         <div className="container">
             <header>
-                <div className="topnav">
-                    <a href="/">Home</a>
-                    <a href="/quiz">Quiz</a>
-                    <a href="/profile">Profile</a>
-                    <a className="active" href={`/hike/${name}`}>DEMO PAGE-TEMP</a>
-                </div>
                 <h1>Husky Hikes - {hike.name}</h1>
                 <p>Scenery: {hike.scenery}</p>
             </header>
