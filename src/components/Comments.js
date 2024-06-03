@@ -1,40 +1,54 @@
-function saveCommentLocally(name, comment) {
-    const existingComments = JSON.parse(localStorage.getItem('comments')) || [];
+import React, { useState, useEffect } from 'react';
 
-    existingComments.push({name, comment });
+const Comments = () => {
+    const [comments, setComments] = useState([]);
 
-    localStorage.setItem('comments', JSON.stringify(existingComments));
-}
+    useEffect(() => {
+        const storedComments = JSON.parse(localStorage.getItem('comments')) || [];
+        setComments(storedComments);
+    }, []);
 
-function fetchComments() {
-    const comments = JSON.parse(localStorage.getItem('comments')) || [];
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        const name = event.target.name.value;
+        const comment = event.target.comment.value;
 
-    const commentsContainer = document.getElementById('comments');
+        const newComment = { name, comment };
+        const updatedComments = [...comments, newComment];
 
-    commentsContainer.innerHTML = '';
-    comments.forEach((commentObj) => {
-        const commentElement = document.createElement('div');
-        commentElement.innerHTML = `<strong>${commentObj.name}</strong>: ${commentObj}.comment}`;
-        commentsContainer.appendChild(commentElement);
-    });
-}
+        setComments(updatedComments);
+        localStorage.setItem('comments', JSON.stringify(updatedComments));
 
-function handleFormSubmit(event) {
-    event.preventDefault();
+        event.target.name.value = '';
+        event.target.comment.value = '';
+    };
 
-    const name = document.getElementById('name').value;
-    const comment = document.getElementById('comment').value;
+    return (
+        <div>
+            <div className="comments">
+                <h2>Comments</h2>
+                {comments.length > 0 ? (
+                    comments.map((commentObj, index) => (
+                        <div key={index}>
+                            <strong>{commentObj.name}</strong>: {commentObj.comment}
+                        </div>
+                    ))
+                ) : (
+                    <p>No hiker comments yet. Be the first to leave your tips!</p>
+                )}
+            </div>
+            <div className="comment-form">
+                <h2>Add Your Comments</h2>
+                <form onSubmit={handleFormSubmit}>
+                    <label htmlFor="name">Hiker Name: </label><br />
+                    <input type="text" id="name" name="name" required /><br />
+                    <label htmlFor="comment">Tell us about your trek!:</label><br />
+                    <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br />
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    );
+};
 
-    saveCommentLocally(name, comment);
-
-    document.getElementById('name').value = '';
-    document.getElementById('comment').value = '';
-
-    fetchComments();
-}
-
-const commentForm = document.getElementById('comment-form');
-
-commentForm.addEventListener('submit', handleFormSubmit);
-
-fetchComments();
+export default Comments;

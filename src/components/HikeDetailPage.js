@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import hikes from "../data/hikes.json";
+import Comments from './Comments';
 
 const HikeDetailPage = () => {
     const { name } = useParams();
@@ -17,6 +18,7 @@ const HikeDetailPage = () => {
             <h2>{hike.name}</h2>
             <p>📍{hike.location}</p>
             {hike.scenery && <p>{hike.scenery.join(", ")}</p>}
+            <Comments />
         </div>
     );
 };
