@@ -6,7 +6,6 @@ import Navbar from './Navbar.js';
 import QuizControl from './quizcontrol.js';
 import { getAuth, onAuthStateChanged, EmailAuthProvider, GoogleAuthProvider, signOut } from 'firebase/auth'
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-import Comments from './Comments.js';
 
 function App({hikes}) {
   const [user, setUser] = useState(null);
@@ -62,7 +61,6 @@ function App({hikes}) {
 
         <Routes>
           <Route path="/" element={<HikesPage hikes={hikes} />} />
-          <Route path="/comment" element={<Comments />} />
           <Route path="/hike/:name" element={<HikeDetailPage />} />
           <Route path="/quiz" element={<QuizControl />} />
         </Routes>

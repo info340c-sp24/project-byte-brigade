@@ -6,9 +6,7 @@ function Navbar({ onLogout }) {
         <button onClick={onLogout} className="nav-link">Logout</button> 
         <div className="topnav">
             <a href="/">Home</a>
-            <a href="/quiz">Demo Quiz</a>
-            <a href="/comment">Comments</a>
-            
+            <a href="/quiz">Quiz</a>
         </div>
         
         <p>Welcome Huskies to some Washington hikes!</p>
