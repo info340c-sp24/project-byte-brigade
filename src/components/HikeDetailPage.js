@@ -14,7 +14,7 @@ const HikeDetailPage = () => {
 
     return (
         <div className="container">
-            <header>
+            <header className="jumbotron">
                 <h1>Husky Hikes - {hike.name}</h1>
                 <p>Scenery: {hike.scenery}</p>
             </header>
