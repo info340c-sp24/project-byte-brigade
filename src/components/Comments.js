@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
 const Comments = () => {
+    const { name: hikeName } = useParams();
     const [comments, setComments] = useState([]);
 
     useEffect(() => {
         const storedComments = JSON.parse(localStorage.getItem('comments')) || [];
         setComments(storedComments);
-    }, []);
+    }, [hikeName]);
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
