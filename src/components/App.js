@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HikesPage from './HikesPage.js';
 import HikeDetailPage from './HikeDetailPage.js';
 import Navbar from './Navbar.js';
+import QuizControl from './QuizControl.js';
 import { getAuth, onAuthStateChanged, EmailAuthProvider, GoogleAuthProvider, signOut } from 'firebase/auth'
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
@@ -58,13 +59,15 @@ function App({hikes}) {
           </header>
         </div>
 
-
+      <Router>
         <Routes>
           <Route path="/" element={<HikesPage hikes={hikes} />} />
           <Route path="/quiz" element={<HikesPage />} />
           <Route path="/comment" element={<HikesPage />} />
           <Route path="/hike/:name" element={<HikeDetailPage />} />
+          <Route path="/quiz" element={<QuizControl />} />
         </Routes>
+      </Router>
         <footer>
           <div>&copy; HuskyHikes, University of Washington 2024</div>
         </footer>

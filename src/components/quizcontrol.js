@@ -1,75 +1,98 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.getElementById('quizForm');
+import React, { useState } from 'react';
+import questions from './Questions';
 
-    // Prevent the default form submission behavior
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
+const QuizControl = () => {
+    const [selectedAnswers, setSelectedAnswers] = useState({});
+    const [result, setResult] = useState(null);
 
-        // Call the function to calculate the result
-        const result = calculateResult();
+    const handleChange = (questionIndex, answerValue) => {
+        setSelectedAnswers({ ...selectedAnswers, [questionIndex]: answerValue });
+    };
 
-        // Display the result to the user
-        displayResult(result);
-    });
-
-    function calculateResult() {
+    const calculateResult = () => {
         let result = '';
-    
-        // Loop through each question
-        questions.forEach((question, index) => {
-            const selectedAnswer = document.querySelector(`input[name=question${index + 1}]:checked`);
-            if (selectedAnswer) {
-                result += selectedAnswer.value;
-            } else {
-                // If no answer is selected, add a placeholder value
-                result += '0';
-            }
-        });
-    
-        return result;
-    }
 
-    // Function to display the result to the user
-    function displayResult(result) {
-        // You can map the result to specific hikes here
+        questions.forEach((_, index) => {
+            const answer = selectedAnswers[index] || '0';
+            result += answer;
+        });
+
+        return result;
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        const result = calculateResult();
+        displayResult(result);
+    };
+
+    const displayResult = (result) => {
         const hike = getHikeForResult(result);
         alert(`Based on your answers, your perfect hike is: ${hike}`);
-    }
+        setResult(hike);
+    };
 
-    // Function to map the result pattern to a specific hike
-    function getHikeForResult(result) {
-      const hikeMap = {
-        '32121': 'Wallace Falls',
-        '22122': ['Cherry Creek Hike', 'Bud Blancher Trail'],
-        '12121': 'Franklin Falls',
-        '22121': 'Heybrook Lookout',
-        '32232': ['Rattlesnake Ledge', 'Poo-Poo point'],
-        '11112': ['Union Bay Natural Area', 'Gas Works Park Loop', 'Ravenna Park Loop',
-        'Green Lake', 'Lincoln Park', 'Grand Forest West Main Point'],
-        '32231': ['Lake 22', 'Mount Si'],
-        '11122': ['Washington Park Arboretum', 'Discovery Park', 'Evans Creek Preserve',
-        'Paradise Valley Area', 'Puyallup Loop Trail'],
-        '12122': ['Foster Island', 'Robe Canyon Trail'],
-        '31232': 'Maple Pass Trail',
-        '11222': 'Cheshiahud Lake Union Loop',
-        '13332': 'Burke Gilman Trail',
-        '22232': 'Chief Sealth Trail',
-        '22222': 'Coal Creek Trail',
-        '21122': 'Japanese Gulch South Loop',
-        '12122': ['North Creek Trail', 'Granite Falls Fish Ladder']
-      };
-  
-      return hikeMap[result] || 'No hike found'; // Return "No hike found" if no match
-    }
-  });
+    const getHikeForResult = (result) => {
+        const hikeMap = {
+            '32121': 'Wallace Falls',
+            '22122': ['Cherry Creek Hike', 'Bud Blancher Trail'],
+            '12121': 'Franklin Falls',
+            '22121': 'Heybrook Lookout',
+            '32232': ['Rattlesnake Ledge', 'Poo-Poo point'],
+            '11112': ['Union Bay Natural Area', 'Gas Works Park Loop', 'Ravenna Park Loop', 'Green Lake', 'Lincoln Park', 'Grand Forest West Main Point'],
+            '32231': ['Lake 22', 'Mount Si'],
+            '11122': ['Washington Park Arboretum', 'Discovery Park', 'Evans Creek Preserve', 'Paradise Valley Area', 'Puyallup Loop Trail'],
+            '12122': ['Foster Island', 'Robe Canyon Trail'],
+            '12112': ['North Creek Trail', 'Granite Falls Fish Ladder'],
+            '31232': 'Maple Pass Trail',
+            '11222': 'Cheshiahud Lake Union Loop',
+            '13332': 'Burke Gilman Trail',
+            '22232': 'Chief Sealth Trail',
+            '22222': 'Coal Creek Trail',
+            '21122': 'Japanese Gulch South Loop'
+        };
 
-    document.getElementById('restartQuiz').addEventListener('click', function() {
-        // Reset all radio buttons to unchecked
-        const radioButtons = document.querySelectorAll('input[type="radio"]');
-        radioButtons.forEach(button => {
-            button.checked = false;
-        });
+        return hikeMap[result] || 'No hike found';
+    };
 
-        // Reset the result message
+    const handleRestart = () => {
+        setSelectedAnswers({});
+        setResult(null);
         alert('Quiz reset.');
-    });
+    };
+
+    return (
+        <div>
+            <h1>Husky Hikes Quiz</h1>
+            <form onSubmit={handleSubmit}>
+                {questions.map((question, index) => (
+                    <div key={index} className="hike-quiz">
+                        <p>{index + 1}. {question.question}</p>
+                        {question.answers.map((answer, idx) => (
+                            <div key={idx}>
+                                <input
+                                    type="radio"
+                                    id={`question${index + 1}-answer${idx + 1}`}
+                                    name={`question${index + 1}`}
+                                    value={answer.value}
+                                    checked={selectedAnswers[index] === answer.value}
+                                    onChange={() => handleChange(index, answer.value)}
+                                />
+                                <label htmlFor={`question${index + 1}-answer${idx + 1}`}>{answer.text}</label>
+                            </div>
+                        ))}
+                    </div>
+                ))}
+                <button type="submit">Submit</button>
+            </form>
+            {result && (
+                <div>
+                    <h2>Your perfect hike is: {result}</h2>
+                    <button onClick={handleRestart}>Restart Quiz</button>
+                </div>
+            )}
+        </div>
+    );
+};
+
+export default QuizControl;
