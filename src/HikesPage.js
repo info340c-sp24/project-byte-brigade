@@ -1,5 +1,5 @@
 import React from 'react';
-import {useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import hikes from "./data/hikes.json"
 
 const HikesPage = () => {
@@ -13,7 +13,12 @@ const HikesPage = () => {
     return (
         <div className = "card-container">
             {hikes.map((hike) => (
-                <div class="card">
+                <div 
+                    key={hike.name}
+                    className="card"
+                    onClick={() => handleCardClick(hike.name)}
+                    style={{ cursor : 'pointer' }}>
+
                     <img src={`/img/${hike.imageName}`} alt={hike.name} />
                     <h2>{hike.name}</h2>
                     <p>📍{hike.location}</p>
