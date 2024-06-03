@@ -19,7 +19,6 @@ const HikeCard = ({hike}) => {
             <img src={`/img/${hike.imageName}`} alt={hike.name} />
             <h2>{hike.name}</h2>
             <p>📍{hike.location}</p>
-            <p> What to expect: {hike.scenery}</p>
 
         </div>
     )
