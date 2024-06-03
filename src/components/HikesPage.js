@@ -8,7 +8,7 @@ const HikesPage = ({ hikes }) => {
     const [requiresPass, setRequirePassFilter] = useState(false);
     const [maxDistance, setMaxDistanceFilter] = useState(10.0);
 
-    const applyFilters = (petFriendly, maxDistanceVal) => {
+    const applyFilters = (petFriendly, maxDistanceVal, kidFriendly, requiresPass) => {
         setPetFriendlyFilter(petFriendly);
         setKidFriendlyFilter(kidFriendly);
         setRequirePassFilter(requiresPass);
@@ -24,7 +24,7 @@ const HikesPage = ({ hikes }) => {
             return false;
         }
         
-        if(requiresPass && !hike.requiresPass) {
+        if(requiresPass && hike.requiresPass) {
             return false;
         }
 

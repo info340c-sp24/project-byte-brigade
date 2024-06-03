@@ -28,7 +28,6 @@ const QuizControl = () => {
 
     const displayResult = (result) => {
         const hike = getHikeForResult(result);
-        alert(`Based on your answers, your perfect hike is: ${hike}`);
         setResult(hike);
     };
 
@@ -58,7 +57,6 @@ const QuizControl = () => {
     const handleRestart = () => {
         setSelectedAnswers({});
         setResult(null);
-        alert('Quiz reset.');
     };
 
     return (

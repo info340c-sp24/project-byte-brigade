@@ -23,7 +23,7 @@ const HikeFilters = (props) => {
     }
 
     const handleSubmit = () => {
-        props.applyFilters(petFriendly, maxDistance);
+        props.applyFilters(petFriendly, maxDistance, kidFriendly, requiresPass);
     }
 
     return (

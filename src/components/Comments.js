@@ -18,7 +18,7 @@ const Comments = () => {
         const newComment = { name, comment };
         const updatedComments = [...comments, newComment];
 
-        const storedComments = JSON.parge(localStorage.getItem('comments')) || {};
+        const storedComments = JSON.parse(localStorage.getItem('comments')) || {};
         storedComments[hikeName] = updatedComments;
 
         setComments(updatedComments);
