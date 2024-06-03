@@ -52,10 +52,11 @@ function App({hikes}) {
       <div >
         <div className="container">
           <header>
-            <h1>Husky Hikes</h1>
             <div class="topnav" className="col-3">
-            <Navbar onLogout={handleLogout} />
+             <Navbar onLogout={handleLogout} />
             </ div>
+            <h1>Husky Hikes</h1>
+            <p>Welcome Huskies to some Washington hikes!</p>
           </header>
         </div>
 
@@ -66,7 +67,7 @@ function App({hikes}) {
         </Routes>
 
         <footer>
-          <div>&copy; HuskyHikes, University of Washington 2024</div>
+          <div>&copy; Husky Hikes, University of Washington 2024</div>
         </footer>
       </div>
     );
