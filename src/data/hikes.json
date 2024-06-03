@@ -20,7 +20,8 @@
         "timeInMinutes": 122,
         "elevation": 646,
         "requiresPass": false,
-        "imageName": "cherrycreek.jpg" 
+        "imageName": "cherrycreek.jpg", 
+        "scenery" : ["Creek,", " Wildlife,"]
     },
     {
         "name": "Franklin Falls",
@@ -31,7 +32,8 @@
         "timeInMinutes": 122,
         "elevation": 344,
         "requiresPass": true,
-        "imageName": "franklinfalls.jpg" 
+        "imageName": "franklinfalls.jpg",
+        "scenery" : ["Waterfall,", "Forest,", "Bridge,"]
     },
     {
         "name": "Heybrook Lookout",
@@ -42,10 +44,11 @@
         "timeInMinutes": 89,
         "elevation": 879,
         "requiresPass": false,
-        "imageName": "heybrooklookout.jpg" 
+        "imageName": "heybrooklookout.jpg",
+        "scenery" : ["Forest,", "Lookout", "Mountains,"]
     },
     {
-        "name": "Union Bay Natrual Area",
+        "name": "Union Bay Natural Area",
         "location": "Seattle, WA",
         "kidFriendly": true,
         "animalFriendly": true,
@@ -53,7 +56,8 @@
         "timeInMinutes": 17,
         "elevation": 29,
         "requiresPass": false,
-        "imageName": "unionbay.jpg" 
+        "imageName": "unionbay.jpg",
+        "scenery"  : [" Wildlife,", "Wetlands", "Bay Views,"]
     },
     {
         "name": "Lake 22",
@@ -64,7 +68,8 @@
         "timeInMinutes": 193,
         "elevation": 1446,
         "requiresPass": true,
-        "imageName": "lake22.jpg" 
+        "imageName": "lake22.jpg",
+        "scenery" : ["Lake,", " River", "Mountains,", "Forest,", " Wildlife,", "Meadow,"] 
     },
     {
         "name": "Washington Park Arboretum",
@@ -75,7 +80,8 @@
         "timeInMinutes": 76,
         "elevation": 206,
         "requiresPass": false,
-        "imageName": "arboretum.jpg" 
+        "imageName": "arboretum.jpg",
+        "scenery" : ["Bay Views,", "Forest,", " Wildlife,", "Meadow,", "Seating,"] 
     },
     {
         "name": "Gas Works Park Loop",
@@ -86,7 +92,8 @@
         "timeInMinutes": 11,
         "elevation": 39,
         "requiresPass": false,
-        "imageName": "gasworks.jpg" 
+        "imageName": "gasworks.jpg",
+        "scenery": ["Bay Views,", "Architecture", "Seating,", "Skyline View,", "Water Recreation,", "Playground,"]
     },
     {
         "name": "Ravenna Park Loop Trail",
@@ -97,7 +104,8 @@
         "timeInMinutes": 40,
         "elevation": 164,
         "requiresPass": false,
-        "imageName": "ravenna.jpg" 
+        "imageName": "ravenna.jpg",
+        "scenery": ["Creek,", " Wildlife,", "Architecture", "Forest,", "Playground,"] 
     },
     {
         "name": "Green Lake",
@@ -108,7 +116,8 @@
         "timeInMinutes": 51,
         "elevation": 36,
         "requiresPass": false,
-        "imageName": "greenlake.jpg" 
+        "imageName": "greenlake.jpg",
+        "scenery": ["Lake,", "Seating,", " Wildlife,", "Water Recreation,", "Playground,"] 
     },
     {
         "name": "Foster Point",
@@ -119,7 +128,8 @@
         "timeInMinutes": 63,
         "elevation": 101,
         "requiresPass": false,
-        "imageName": "fosterpoint.jpg" 
+        "imageName": "fosterpoint.jpg",
+        "scenery": ["Bay Views,", "Wetlands", "Bridge,", " Wildlife,"]
     },
     {
         "name": "Maple Pass Trail",
@@ -130,7 +140,8 @@
         "timeInMinutes": 249,
         "elevation": 2162,
         "requiresPass": false,
-        "imageName": "mapletrail.jpg" 
+        "imageName": "mapletrail.jpg",
+        "scenery": ["Glacier,", "Mountains,", "Forest,", "Meadow,", " Wildlife,"] 
     },
     {
         "name": "Cheshiahud Lake Union Loop",
@@ -141,7 +152,8 @@
         "timeInMinutes": 123,
         "elevation": 232,
         "requiresPass": false,
-        "imageName": "cheshiahud.jpg" 
+        "imageName": "cheshiahud.jpg",
+        "scenery": ["Water Recreation,", "Bridge,", "Skyline View,", "Lake,"] 
     },
     {
         "name": "Burke Gilman Trail",
@@ -152,7 +164,8 @@
         "timeInMinutes": 336,
         "elevation": 485,
         "requiresPass": false,
-        "imageName": "burkegilman.jpg" 
+        "imageName": "burkegilman.jpg",
+        "scenery": [" Wildlife,", "Forest,", "Skyline View,", "Bay Views,", "Bridge,"] 
     },
     {
         "name": "Discovery Park",
@@ -163,7 +176,8 @@
         "timeInMinutes": 107,
         "elevation": 485,
         "requiresPass": false,
-        "imageName": "discoverypark.jpg" 
+        "imageName": "discoverypark.jpg",
+        "scenery": ["Sound Views,", " Wildlife,", "Lighthouse,", "Meadow,", "Forest,", "Wetlands", "Cemetary,"]
     },
     {
         "name": "Lincoln Park",
@@ -174,7 +188,8 @@
         "timeInMinutes": 30,
         "elevation": 111,
         "requiresPass": false,
-        "imageName": "lincolnpark.jpg" 
+        "imageName": "lincolnpark.jpg",
+        "scenery": ["Playground,", "Meadow,", "Sound Views,", "Water Recreation,", "Architecture,"] 
     },
     {
         "name": "Poo-Poo Point Trail",
@@ -185,7 +200,8 @@
         "timeInMinutes": 227,
         "elevation": 1794,
         "requiresPass": false,
-        "imageName": "poopoo.jpg" 
+        "imageName": "poopoo.jpg",
+        "scenery": ["Mountains,", " Wildlife,", "Forest,", "Summits,"] 
     },
     {
         "name": "Mount Si Trail",
@@ -196,7 +212,8 @@
         "timeInMinutes": 217,
         "elevation": 3395,
         "requiresPass": true,
-        "imageName": "mountsi.jpg" 
+        "imageName": "mountsi.jpg", 
+        "scenery": ["Mountains,", "Forest,", " Wildlife,", "Summits,"] 
     },
     {
         "name": "Evans Creek Preserve",
@@ -207,7 +224,8 @@
         "timeInMinutes": 73,
         "elevation": 465,
         "requiresPass": false,
-        "imageName": "evanscreek.jpg" 
+        "imageName": "evanscreek.jpg",
+        "scenery": ["Creek,", " Wildlife,", "Wetlands", "Meadow,"] 
     },
     {
         "name": "Grand Forest West Main Trail",
@@ -218,7 +236,8 @@
         "timeInMinutes": 23,
         "elevation": 62,
         "requiresPass": false,
-        "imageName": "grandforest.jpg" 
+        "imageName": "grandforest.jpg",
+        "scenery": ["Forest,", "Bridge,", " Wildlife,"] 
     },
     {
         "name": "Chief Sealth Trail",
@@ -229,7 +248,8 @@
         "timeInMinutes": 205,
         "elevation": 882,
         "requiresPass": false,
-        "imageName": "chief.jpg" 
+        "imageName": "chief.jpg",
+        "scenery": ["Mountains,", "Meadow,", "Skyline View,"] 
     },
     {
         "name": "Coal Creek Tail",
@@ -240,7 +260,8 @@
         "timeInMinutes": 123,
         "elevation": 567,
         "requiresPass": false,
-        "imageName": "coalcreek.jpg" 
+        "imageName": "coalcreek.jpg",
+        "scenery": ["Creek,", "Waterfall,", "Forest,"] 
     },
     {
         "name": "Japanese Gulch South Loop",
@@ -251,7 +272,8 @@
         "timeInMinutes": 100,
         "elevation": 314,
         "requiresPass": false,
-        "imageName": "japanesegulch.jpg" 
+        "imageName": "japanesegulch.jpg",
+        "scenery": ["Mountains,", " Wildlife,", "Waterfall,", "River,", "Forest,"] 
     },
     {
         "name": "Paradise Valley Area",
@@ -262,7 +284,8 @@
         "timeInMinutes": 101,
         "elevation": 314,
         "requiresPass": false,
-        "imageName": "paradisevalley.jpg" 
+        "imageName": "paradisevalley.jpg", 
+        "scenery": [" Wildlife,", "Forest,", "Creek,"] 
     },
     {
         "name": "North Creek Trail",
@@ -273,7 +296,8 @@
         "timeInMinutes": 33,
         "elevation": 39,
         "requiresPass": false,
-        "imageName": "northcreek.jpg" 
+        "imageName": "northcreek.jpg", 
+        "scenery": ["Creek,", " Wildlife,", "Lake,", "Playground,"] 
     },
     {
         "name": "Robe Canyon Trail",
@@ -284,7 +308,8 @@
         "timeInMinutes": 18,
         "elevation": 98,
         "requiresPass": false,
-        "imageName": "robecanyon.jpg" 
+        "imageName": "robecanyon.jpg", 
+        "scenery": ["Canyons,", "Lake,", " Wildlife,", "Forest,", "River,"] 
     },
     {
         "name": "Granite Falls Fish Ladder",
@@ -295,7 +320,8 @@
         "timeInMinutes": 18,
         "elevation": 98,
         "requiresPass": false,
-        "imageName": "granitefalls.jpg" 
+        "imageName": "granitefalls.jpg", 
+        "scenery": ["Waterfall,", " Wildlife,", "Forest,", "River,", "Architecture"] 
     },
     {
         "name": "Bud Blancher Trail ",
@@ -306,7 +332,8 @@
         "timeInMinutes": 114,
         "elevation": 561,
         "requiresPass": false,
-        "imageName": "budblancher.jpg" 
+        "imageName": "budblancher.jpg", 
+        "scenery": ["Waterfall,", "River,", " Wildlife,", "Forest,"] 
     },
     {
         "name": "Puyallup Loop Trail",
@@ -317,8 +344,7 @@
         "timeInMinutes": 99,
         "elevation": 433,
         "requiresPass": false,
-        "imageName": "puyallup.jpg" 
+        "imageName": "puyallup.jpg", 
+        "scenery": [" Wildlife,", "Wetlands", "Creek,"] 
     }
-    
-    
 ]
