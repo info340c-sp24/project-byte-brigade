@@ -23,9 +23,17 @@ const HikeDetailPage = () => {
                 <div className="hike-info">
                     <img src={`/img/${hike.imageName}`} alt={hike.imageName}/>
                     <h2>About the hike:</h2>
-                    <p>Scenery: {hike.scenery}</p><br />
-                    <p>Kid Friendly: {hike.kidFriendly}, Animal Friendly: {hike.animalFriendly}, Requires Pass? {hike.requiresPass}</p><br />
-                    <p>Distance: {hike.distance}, Time in Minutes: {hike.timeInMinutes}, Elevation: {hike.elevation}</p>
+                    <p>Scenery: {hike.scenery.join(', ')}</p><br />
+                    <p>
+                        Kid Friendly: {hike.kidFriendly ? "Yes" : "No"},
+                        Animal Friendly: {hike.animalFriendly ? "Yes" : "No"},
+                        Requires Pass? {hike.requiresPass ? "Yes" : "No"}
+                    </p><br />
+                    <p>
+                        Distance: {hike.distance} miles,
+                        Time in Minutes: {hike.timeInMinutes},
+                        Elevation: {hike.elevation} ft
+                    </p>
                 </div>
                 <Comments />
             </main>
