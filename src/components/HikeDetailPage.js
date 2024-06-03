@@ -21,11 +21,7 @@ const HikeDetailPage = () => {
 
             <main>
                 <div className="hike-info">
-<<<<<<< HEAD
-                    <img src={`/img/${hike.imageName}`} alt={hike.name} />
-=======
                     <img src={`/img/${hike.imageName}`} alt={hike.imageName}/>
->>>>>>> 26bcdc87349dae461f9ad70884d1308d8a8d022d
                     <h2>About the hike:</h2>
                     <p>Scenery: {hike.scenery.join(', ')}</p><br />
                     <p>
