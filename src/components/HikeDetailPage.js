@@ -21,7 +21,7 @@ const HikeDetailPage = () => {
 
             <main>
                 <div className="hike-info">
-                    <img src={`/img/${hike.imageName}`} alt={`this hike is of /img/${hike.imageName}`} />
+                    <img src={`/img/${hike.imageName}`} alt={hike.imageName}/>
                     <h2>About the hike:</h2>
                     <p>Scenery: {hike.scenery}</p><br />
                     <p>Kid Friendly: {hike.kidFriendly}, Animal Friendly: {hike.animalFriendly}, Requires Pass? {hike.requiresPass}</p><br />
