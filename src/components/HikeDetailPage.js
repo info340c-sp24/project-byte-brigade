@@ -5,7 +5,6 @@ import Comments from './Comments';
 
 const HikeDetailPage = () => {
     const { name } = useParams();
-    console.log(`Fetching details for hike ID: ${name}`);
     const hike = hikes.find(h => h.name === name);
 
     if (!hike) {
