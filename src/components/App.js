@@ -55,8 +55,6 @@ function App({hikes}) {
             <div class="topnav" className="col-3">
              <Navbar onLogout={handleLogout} />
             </ div>
-            <h1>Husky Hikes</h1>
-            <p>Welcome Huskies to some Washington hikes!</p>
           </header>
         </div>
 

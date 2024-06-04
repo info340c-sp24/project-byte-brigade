@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import questions from './Questions';
+import questions from './questions';
 
 const QuizControl = () => {
     const [selectedAnswers, setSelectedAnswers] = useState({});
