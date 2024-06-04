@@ -27,7 +27,7 @@ const HikeFilters = (props) => {
     }
 
     return (
-        <div className='filter'>
+        <div className="filter">
             <h2>Filters</h2>
             <div>
                 <input type='radio' id='pet-friendly' checked={petFriendly} onClick={handlePetFriendly}></input>

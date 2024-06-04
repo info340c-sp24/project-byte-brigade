@@ -37,17 +37,19 @@ const HikesPage = ({ hikes }) => {
 
     return (
         <div>
-                <header>
-                    <h1>Husky Hikes</h1>
-                    <p>Welcome Huskies to some Washington hikes!</p>
-                </header>
-                <HikeFilters applyFilters={applyFilters} />
-                <div className="card-container">
-                    {filteredHikes.map((hike) => (
-                        <HikeCard hike={hike} />
-                    ))}
-                </div>
-        </div>
+            <header>
+                <h1>Husky Hikes</h1>
+                <p>Welcome Huskies to some Washington hikes!</p>
+            </header>
+
+             <HikeFilters applyFilters={applyFilters} />
+
+            <div className="card-container">
+                {filteredHikes.map((hike) => (
+                    <HikeCard hike={hike} />
+                ))}
+            </div>
+    </div>
             
         
     )
