@@ -89,7 +89,7 @@
   
   .container {
     margin: auto;
-    width: 70%;
+    width: 100%;
     height: 100%;
   }
   
@@ -212,7 +212,7 @@
   
   button {
     display: block;
-    margin: 20px auto;
+    margin: 13px auto;
     padding: 10px 20px;
     background-color: #805F41;
     color: #fff;
@@ -228,4 +228,8 @@
   .quiz {
     text-align: center;
     font-style: italic;
+  }
+
+  .filter {
+    text-align: center;
   }
