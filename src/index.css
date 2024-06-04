@@ -214,7 +214,7 @@
     display: block;
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #805F41;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -222,5 +222,10 @@
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #634931;
+  }
+
+  .quiz {
+    text-align: center;
+    font-style: italic;
   }

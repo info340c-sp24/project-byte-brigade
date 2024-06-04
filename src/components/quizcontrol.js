@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import questions from './questions';
+import questions from './Questions';
 
 const QuizControl = () => {
     const [selectedAnswers, setSelectedAnswers] = useState({});
@@ -60,8 +60,9 @@ const QuizControl = () => {
     };
 
     return (
-        <div>
+        <div className='quiz'>
             <h1>Husky Hikes Quiz</h1>
+            <p>Take the quiz to find the hike for you!</p>
             <form onSubmit={handleSubmit}>
                 {questions.map((question, index) => (
                     <div key={index} className="hike-quiz">

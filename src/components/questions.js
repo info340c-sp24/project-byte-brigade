@@ -10,8 +10,8 @@ const questions = [
   {
     question: "What type of route would you prefer?",
     answers: [
-        {text: "Out & Back", value: "1"},
-        {text: "Loop", value: "2"},
+        {text: "Loop", value: "1"},
+        {text: "Out & Back", value: "2"},
         {text: "Point to Point", value: "3"},
     ],
   },
