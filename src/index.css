@@ -143,6 +143,7 @@
     margin: 0;
   }
   
+  /* Hike Info Page Specifics*/
   .hike-info {
     display: flex;
     flex-direction: column;
